@@ -1,39 +1,37 @@
-/* Reset */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body & HTML styling */
-html, body {
-  font-family: Georgia, serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #a7a9be;
+html {
   background-color: #0f0e17;
+  font-size: 16px;
+  font-family: Georgia, serif;
+  color: #a7a9be;
+  line-height: 1.5;
 }
 
-/* Header and navigation */
 header {
-  width: 100%;
+  width: 100vw;
   font-size: 12px;
   text-transform: uppercase;
   text-align: right;
-  background-color: #ff8906;
   color: #0f0e17;
+  background-color: #ff8906;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   padding: 8px;
-  letter-spacing: 0.5px;
+  letter-spacing: .5px;
   z-index: 10;
 }
 
-nav a {
+nav a{
   padding: 0 10px;
-  text-decoration: none;
+  display: inline;
   color: black;
+  text-decoration: none;
 }
 
 .site-title {
@@ -41,41 +39,38 @@ nav a {
   float: left;
 }
 
-/* Main content */
 main {
-  width: 500px;
-  margin: 100px auto 100px auto; /* Offset for fixed header */
   position: relative;
+  top: 80px;
+  width: 500px;
+  margin: 0 0 100px 25px;
 }
 
 h1 {
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.15em;
-  margin-bottom: 10px;
+  letter-spacing: .15em;
+  margin-bottom: 5px;
 }
 
-/* Hero image */
 .hero {
   width: 100%;
   height: auto;
 }
 
-/* Jump scare image */
 .jump {
+  width: 90vw;
   position: sticky;
   top: 200px;
-  text-align: right;
-  margin: 10px 0;
 }
 
-.scare {
-  width: auto;
+.scare{
   height: 150px;
+  width: auto;
+  float: right;
 }
 
-/* Story content */
 .story {
   margin-top: 20px;
 }
@@ -90,12 +85,11 @@ em {
   color: #fffffe;
 }
 
-/* Links */
 a {
   color: #ff8906;
-  text-decoration: none;
 }
 
-a:hover {
+a:hover{
   color: #f25f4c;
+  text-decoration: none;
 }
